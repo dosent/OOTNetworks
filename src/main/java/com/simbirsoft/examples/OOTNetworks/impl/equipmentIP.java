@@ -1,6 +1,8 @@
 package com.simbirsoft.examples.OOTNetworks.impl;
 
 import com.simbirsoft.examples.OOTNetworks.api.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class equipmentIP extends Equipment {
 
@@ -12,6 +14,8 @@ public class equipmentIP extends Equipment {
     }
 
     public void applaySetting() {
+        Logger logger = LoggerFactory.getLogger(equipmentIP.class);
+        logger.info("Run method applaySetting() {}");
         provider.getSettingsNetwork();
     }
 }
