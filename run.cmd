@@ -1,0 +1,1 @@
+java -ea -cp target/OOTNetworks-1.0-SNAPSHOT.jar com.simbirsoft.examples.OOTNetworks.App
