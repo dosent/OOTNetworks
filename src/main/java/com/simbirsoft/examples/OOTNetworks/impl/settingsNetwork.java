@@ -1,6 +1,6 @@
 package com.simbirsoft.examples.OOTNetworks.impl;
 
-public class SettingsNetwork {
+public class settingsNetwork {
     private String Setting;
 
     public String getSetting() {
@@ -11,7 +11,7 @@ public class SettingsNetwork {
         Setting = setting;
     }
 
-    public SettingsNetwork(String setting) {
+    public settingsNetwork(String setting) {
         Setting = setting;
     }
 }

@@ -2,7 +2,7 @@ package com.simbirsoft.examples.OOTNetworks.impl;
 
 import com.simbirsoft.examples.OOTNetworks.api.*;
 
-public class equipmentIP extends equipment {
+public class equipmentIP extends Equipment {
 
     private String ipAdr;
 

@@ -2,7 +2,7 @@ package com.simbirsoft.examples.OOTNetworks.impl;
 
 import com.simbirsoft.examples.OOTNetworks.api.*;
 
-public class equipmentGSM extends equipment {
+public class equipmentGSM extends Equipment {
 
     private String inventNumber;
 
