@@ -4,17 +4,17 @@ import com.simbirsoft.examples.OOTNetworks.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class equipmentIP extends Equipment {
+public class EquipmentGSM extends Equipment {
 
-    private String ipAdr;
+    private String inventNumber;
 
-    public equipmentIP(Provider provider, String ipAdr) {
+    public EquipmentGSM(Provider provider, String inventNumber) {
         this.provider = provider;
-        this.ipAdr = ipAdr;
+        this.inventNumber = inventNumber;
     }
 
     public void applaySetting() {
-        Logger logger = LoggerFactory.getLogger(equipmentIP.class);
+        Logger logger = LoggerFactory.getLogger(EquipmentGSM.class);
         logger.info("Run method applaySetting() {}");
         provider.getSettingsNetwork();
     }

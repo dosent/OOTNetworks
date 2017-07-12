@@ -1,16 +1,16 @@
 package com.simbirsoft.examples.OOTNetworks.api;
 
-import com.simbirsoft.examples.OOTNetworks.impl.logCall;
+import com.simbirsoft.examples.OOTNetworks.impl.LogCall;
 
 public abstract class Equipment {
     protected Provider provider;
 
-    private com.simbirsoft.examples.OOTNetworks.impl.logCall logCall;
+    private LogCall logCall;
 
-    public com.simbirsoft.examples.OOTNetworks.impl.logCall call() {
+    public LogCall call() {
         applaySetting();
         System.out.println("Провайдер: " + provider.getNameProvider() + " Совершаю вызов");
-        this.logCall = new logCall();
+        this.logCall = new LogCall();
         return logCall;
     }
 

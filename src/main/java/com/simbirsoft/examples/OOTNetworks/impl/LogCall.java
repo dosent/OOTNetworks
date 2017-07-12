@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by neshi on 11.07.2017.
  */
-public class logCall {
+public class LogCall {
 
     public int getTimeCall(){
         return new Random().nextInt(100);

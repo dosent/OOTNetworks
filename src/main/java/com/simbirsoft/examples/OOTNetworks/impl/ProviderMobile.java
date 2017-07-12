@@ -2,18 +2,17 @@ package com.simbirsoft.examples.OOTNetworks.impl;
 
 import com.simbirsoft.examples.OOTNetworks.api.Provider;
 
-public class providerMobile implements Provider {
+public class ProviderMobile implements Provider {
 
-
-    public com.simbirsoft.examples.OOTNetworks.impl.settingsNetwork getSettingsNetwork() {
+    public SettingsNetwork getSettingsNetwork() {
         return settingsNetwork;
     }
 
-    private com.simbirsoft.examples.OOTNetworks.impl.settingsNetwork settingsNetwork;
+    private SettingsNetwork settingsNetwork;
     private String nameProvider;
     static final String typeProvider = "Mobile type";
 
-    public providerMobile(String nameProvider) {
+    public ProviderMobile(String nameProvider) {
         this.nameProvider = nameProvider;
     }
 

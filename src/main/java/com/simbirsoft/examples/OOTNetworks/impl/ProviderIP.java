@@ -2,14 +2,14 @@ package com.simbirsoft.examples.OOTNetworks.impl;
 
 import com.simbirsoft.examples.OOTNetworks.api.Provider;
 
-public class providerIP implements Provider {
+public class ProviderIP implements Provider {
 
-    private com.simbirsoft.examples.OOTNetworks.impl.settingsNetwork settingsNetwork;
+    private SettingsNetwork settingsNetwork;
     private String nameProvider;
 
     static final String typeProvider = "IP type";
 
-    public providerIP(String nameProvider) {
+    public ProviderIP(String nameProvider) {
         this.nameProvider = nameProvider;
     }
 
@@ -21,7 +21,7 @@ public class providerIP implements Provider {
         return typeProvider;
     }
 
-    public com.simbirsoft.examples.OOTNetworks.impl.settingsNetwork getSettingsNetwork() {
+    public SettingsNetwork getSettingsNetwork() {
         return null;
     }
 }
