@@ -4,14 +4,59 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
- <!--   <changeSet id="20170713-001" author="I.Neshin">
-        <comment>
-            Создание таблицы тестовой
-        </comment>
-        <createTable tableName="Equipment">
-            <column name="id_Equipment" type="int" autoIncrement="true"/>
-            <column name="address" type="varchar(255)"/>
-        </createTable>
+
+    <changeSet id="20170715-001" author="I.Neshin">
+        <sql>
+            create table Equipment (
+            Name national varchar(200),
+            SerialNumber int ,
+            Equipment_ID int not null,
+            primary key (Equipment_ID)
+            )
+        </sql>
     </changeSet>
--->
+    <changeSet id="20170715-002" author="I.Neshin">
+        <sql>
+            create table EquipmentToSwitch
+            (
+            Rec_ID int int not null,
+            Equipment_ID int not null
+            )
+        </sql>
+    </changeSet>
+    <changeSet id="20170715-003" author="I.Neshin">
+        <sql>
+            create table Persona
+            (
+            FIO national varchar(200),
+            Number varchar(10) UNIQUE not null,
+            primary key (Number)
+            )
+        </sql>
+    </changeSet>
+    <changeSet id="20170715-004" author="I.Neshin">
+        <sql>
+            create table RequestCall
+            (
+            Number varchar(10),
+            СalledNumber varchar(10),
+            CallingNumber varchar(10),
+            Request_ID int not null,
+            primary key (Request_ID)
+            )
+        </sql>
+    </changeSet>
+    <changeSet id="20170715-005" author="I.Neshin">
+        <sql>
+            create table Switch
+            (
+            Durations time ,
+            Request_ID int ,
+            Equipment_ID int,
+            DT datetime,
+            Rec_ID int not null,
+            primary key (Rec_ID)
+            )
+        </sql>
+    </changeSet>
 </databaseChangeLog>
