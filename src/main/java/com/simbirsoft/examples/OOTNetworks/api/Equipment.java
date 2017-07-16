@@ -4,7 +4,8 @@ import com.simbirsoft.examples.OOTNetworks.impl.LogCall;
 
 public abstract class Equipment {
     protected Provider provider;
-
+    protected String Name;
+    protected String SerialNumber;
     private LogCall logCall;
 
     public LogCall call() {
@@ -20,6 +21,22 @@ public abstract class Equipment {
 
     public void setProvider(Provider provider) {
         this.provider = provider;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getSerialNumber() {
+        return SerialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        SerialNumber = serialNumber;
     }
 
     public abstract void applaySetting();
